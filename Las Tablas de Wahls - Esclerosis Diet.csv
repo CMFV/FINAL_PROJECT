@@ -1,0 +1,339 @@
+"ME, ALZHEIMER, PARKINSON",GOOD,NEUTRAL,BAD
+Cod-liver oil,1,0,0
+liver,1,0,0
+Organ meat,1,0,0
+seeds,1,0,0
+nuts,1,0,0
+Liver,1,0,0
+greens,1,0,0
+chicken,1,0,0
+Fish,1,0,0
+asparagus,1,0,0
+shellfish,1,0,0
+citrus,1,0,0
+avocado,1,0,0
+molasses,1,0,0
+Seaweed,1,0,0
+seafood,1,0,0
+iodized sea salt,1,0,0
+raw soaked nuts,1,0,0
+Brazil  nuts,1,0,0
+sunflower seeds,1,0,0
+berries,1,0,0
+Heart,1,0,0
+poultry,1,0,0
+kidney,1,0,0
+mushrooms,1,0,0
+Animal fats,1,0,0
+Walnut,1,0,0
+flax,1,0,0
+hemp oils,1,0,0
+Wild herring,1,0,0
+salmon,1,0,0
+primrose,1,0,0
+Boragehemp oil,1,0,0
+Partially hydrogenated fats,0,0,1
+zucchini,1,0,0
+Asparagus ,1,0,0
+Artichokes,1,0,0
+green Cabbage,1,0,0
+green Celery,1,0,0
+Cucumbers,1,0,0
+Kiwi,1,0,0
+Limes,1,0,0
+Melons,1,0,0
+honeydew Okra,1,0,0
+Olives,1,0,0
+Peppers,1,0,0
+peas,1,0,0
+Beets,1,0,0
+Blood oranges,1,0,0
+Cabbage,1,0,0
+red Cherries,1,0,0
+Cranberries,1,0,0
+Grapefruits,1,0,0
+Grapes,1,0,0
+red Peppers,1,0,0
+Red Pomegranates,1,0,0
+red Rhubarb,1,0,0
+Strawberries,1,0,0
+Tomatoes,1,0,0
+Watermelons,1,0,0
+Aronia berries,1,0,0
+Blackberries,1,0,0
+Blueberries ,1,0,0
+Eggplants,1,0,0
+Elderberries,1,0,0
+Grapes,1,0,0
+Figs,1,0,0
+purple,1,0,0
+Kale,1,0,0
+black Plums,1,0,0
+Prunes Raisins,1,0,0
+Raspberries,1,0,0
+Apricots,1,0,0
+Carrots,1,0,0
+Grapefruit,1,0,0
+Lemon,1,0,0
+Mangos,1,0,0
+Muskmelons,1,0,0
+Nectarines,1,0,0
+Oranges,1,0,0
+Papayas,1,0,0
+Peaches,1,0,0
+Pineapples,1,0,0
+Pumpkins,1,0,0
+Sweet potatoes,1,0,0
+Tangerines,1,0,0
+Apple,0,1,0
+pear,0,1,0
+bananas,0,1,0
+Beans,0,1,0
+legumes,0,1,0
+peas,0,1,0
+lentils,0,1,0
+peanuts,0,1,0
+Raw nuts,0,0,1
+Raw seeds,0,0,1
+Eggs,0,1,0
+Flax oil,1,0,0
+hemp oil,1,0,0
+walnut oil,1,0,0
+Olive oil,1,0,0
+coconut oil,1,0,0
+coconut butter,1,0,0
+clarified butter,1,0,0
+lard,1,0,0
+bacon grease,1,0,0
+coconut milk,1,0,0
+Rice milk,0,1,0
+Soy milk,0,1,0
+almond milk,1,0,0
+hazelnut milk,1,0,0
+hemp milk,1,0,0
+cow milk,0,0,1
+goat milk,0,0,1
+sheep milk,0,0,1
+rice grains,0,1,0
+oat grains,0,1,0
+quinoa grains,0,1,0
+amaranth grains,0,1,0
+buckwheat grains,0,1,0
+corn grains,0,1,0
+wheat grains,0,0,1
+rye grains,0,0,1
+barley grains,0,0,1
+rice flour,0,1,0
+oat flour,0,1,0
+quinoa flour,0,1,0
+amaranth flour,0,1,0
+buckwheat flour,0,1,0
+corn flour,0,1,0
+wheat flour,0,0,1
+rye flour,0,0,1
+barley flour,0,0,1
+chlorella,1,0,0
+Dried algae,1,0,0
+spirulina,1,0,0
+Nutritional yeast,1,0,0
+Beet greens,1,0,0
+Bok choy,1,0,0
+Chicory,1,0,0
+Cilantro,1,0,0
+Collard greens,1,0,0
+Dandelion greens,1,0,0
+Endive,1,0,0
+Escarole,1,0,0
+Lettuce,1,0,0
+iceberg Lettuce,0,0,1
+Mizuna,1,0,0
+Mustard,1,0,0
+Parsley,1,0,0
+Radicchio,1,0,0
+Radish,1,0,0
+lettuce,1,0,0
+spinach,1,0,0
+Tatsoi,1,0,0
+Turnip greens,1,0,0
+Watercress,1,0,0
+Wheatgrass,1,0,0
+cucumbers,1,0,0
+Celery,1,0,0
+Green peas,0,1,0
+Honeydew melon,1,0,0
+Okra,1,0,0
+Snow peas,0,1,0
+Sugar snap peas,0,1,0
+Commercial juices,0,0,1
+Beets,1,0,0
+cranberries,1,0,0
+Pomegranate,1,0,0
+Plums Raspberries,1,0,0
+currants,0,1,0
+Figs,1,0,0
+Prunes,0,1,0
+Raisins,0,1,0
+Apricots,1,0,0
+Carrots,1,0,0
+Muskmelon,1,0,0
+Nectarines,1,0,0
+Peaches,1,0,0
+Pumpkin,1,0,0
+Yams,1,0,0
+Acorn,1,0,0
+squash,1,0,0
+Figs,1,0,0
+Broccoli,1,0,0
+Brussels sprouts,1,0,0
+Cauliflower Chives,1,0,0
+Collard greens,1,0,0
+Daikon,1,0,0
+Garlic,1,0,0
+Mushrooms,1,0,0
+Onions,1,0,0
+Radishes,1,0,0
+Rutabagas,1,0,0
+Scallions,1,0,0
+Shallots,1,0,0
+Tatsoi,1,0,0
+Turnip,1,0,0
+Watercress,1,0,0
+Algae,1,0,0
+Chlorella,1,0,0
+Spirulina,1,0,0
+Dulse,1,0,0
+Irish moss Nori,1,0,0
+Bladderwrack,1,0,0
+Kelp,1,0,0
+Kombu Wakame,1,0,0
+Sea lettuce,1,0,0
+Beef,1,0,0
+Buffalo,1,0,0
+bison,1,0,0
+Chicken,1,0,0
+Duck Elk,1,0,0
+salmon,1,0,0
+tuna,1,0,0
+cod,1,0,0
+sardines,1,0,0
+mackerel,1,0,0
+tilapia,1,0,0
+sea bass,1,0,0
+herring,1,0,0
+Lamb Pork,1,0,0
+shrimp,1,0,0
+crab,1,0,0
+lobster,1,0,0
+scallops,1,0,0
+Turkey,1,0,0
+Veal,1,0,0
+Venison,1,0,0
+rabbit,1,0,0
+pheasant,1,0,0
+quail,1,0,0
+Brain,1,0,0
+Gizzard,1,0,0
+Heart,1,0,0
+Kidney,1,0,0
+Sweetbreads,1,0,0
+Tongue,1,0,0
+Tripe,1,0,0
+Anchovies,1,0,0
+Clams,1,0,0
+Halibut,1,0,0
+Herring,1,0,0
+Mackerel,1,0,0
+Mussels,1,0,0
+Oysters,1,0,0
+Salmon,1,0,0
+Sardines,1,0,0
+Trout,1,0,0
+Tuna,1,0,0
+Almond flour,1,0,0
+nut flour,1,0,0
+Amaranth,1,0,0
+Arrowroot,1,0,0
+Brown rice,1,0,0
+Buckwheat,1,0,0
+Chickpea flour,1,0,0
+Coconut flour,1,0,0
+Coconut meat,1,0,0
+Flaxseeds,1,0,0
+flax,1,0,0
+meal Millet,1,0,0
+Oatmeal,1,0,0
+Quinoa,1,0,0
+Sago,1,0,0
+Sorghum,1,0,0
+Soy flour,1,0,0
+Tapioca,1,0,0
+potatoes,1,0,0
+Wild rice,1,0,0
+dried beans,0,1,0
+Lentils,0,1,0
+Pea pods,0,1,0
+beans,0,1,0
+ almonds,1,0,0
+walnuts,1,0,0
+hazelnuts,1,0,0
+cashews,1,0,0
+Brazil nuts,1,0,0
+pistachios,1,0,0
+sunflower seeds,1,0,0
+pumpkin seeds,1,0,0
+sesame seeds,1,0,0
+flax seeds,1,0,0
+chia seeds,1,0,0
+Peanuts,0,1,0
+green peas,0,1,0
+split peas,0,1,0
+black-eyed peas,0,1,0
+Tahini,1,0,0
+Almond butter,1,0,0
+Sunflower butter,1,0,0
+Avocado oil,1,0,0
+Flax oil,1,0,0
+Hemp oil,1,0,0
+Olive oil,1,0,0
+extra virgin Walnut oil,1,0,0
+Clarified butter,1,0,0
+ghee,1,0,0
+Brewer’s yeast,0,1,0
+Herbs,1,0,0
+spices,1,0,0
+Horseradish,1,0,0
+Miso,1,0,0
+Nutritional yeast,1,0,0
+Pickles,1,0,0
+Sauerkraut,1,0,0
+Sea salt,1,0,0
+Tamari,1,0,0
+Wasabi,1,0,0
+Honey,1,0,0
+Real maple syrup,1,0,0
+Molasses,1,0,0
+Sorghum,1,0,0
+Stevia,1,0,0
+Raw sugar,1,0,0
+Sugar,0,0,1
+white sugar,0,0,1
+Wheat,0,0,1
+Wheat germ,0,0,1
+Rye,0,0,1
+Barley,0,0,1
+Bulgur,0,0,1
+Couscous,0,0,1
+Farina,0,0,1
+Graham flour,0,0,1
+Kamut Matzo,0,0,1
+Semolina,0,0,1
+Spelt,0,0,1
+Triticale,0,0,1
+bread,0,0,1
+pasta,0,0,1
+pizza,0,0,1
+tabbouleh,0,0,1
+celeriac,1,0,0
+cheese,0,0,1
+salad,1,0,0
+vegetable,1,0,0
