@@ -54,9 +54,9 @@ def training_save_model(X_train, X_test, y_train, y_test):
     pickle_out = open('FOOD_PREDICTED.sav','wb')
     pickle.dump(randomforest, pickle_out)
     pickle_out.close()
-    return error, score
+    return error, score, fpr, tpr
 
-def plotter_model(score, error):
+def plotter_model(score, error, fpr, tpr):
     plt.figure()
     lw = 2
     plt.plot(fpr, tpr, color='darkorange',lw=lw, label='ROC curve (area = %0.2f)' % error)
@@ -104,8 +104,8 @@ def consulta(inputo, lista):
 
 
 
-def plotter_selected (res, result, column):
-    row=result[column==res]
+def plotter_selected (dish_selection, result, column):
+    row=result[column==dish_selection]
     row.reset_index(inplace=True,drop=True)
     lst=[]
     keys=[]
