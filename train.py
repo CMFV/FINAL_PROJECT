@@ -56,6 +56,20 @@ def training_save_model(X_train, X_test, y_train, y_test):
     pickle_out.close()
     return error, score
 
+def plotter_model(score, error):
+    plt.figure()
+    lw = 2
+    plt.plot(fpr, tpr, color='darkorange',lw=lw, label='ROC curve (area = %0.2f)' % error)
+    plt.plot([0, 1], [0, 1], color='navy', lw=lw, linestyle='--')
+    plt.xlim([0.0, 1.0])
+    plt.ylim([0.0, 1.05])
+    plt.xlabel('False Positive Rate')
+    plt.ylabel('True Positive Rate')
+    plt.title('Random Forest accuracy {}'.format(score))
+    plt.legend(loc="lower right")
+    grafico_modelo=plt.show()
+    return grafico_modelo
+
 def reading_model (directorio, df_me_data0):
     modelo=pickle.load(open ('FOOD_PREDICTED.sav','rb'))
     df_no_clas0=pd.read_csv(directorio)
@@ -100,14 +114,16 @@ def plotter_selected (res, result, column):
             lst.append((row[row.columns[i+2]][0]))
             keys.append(row.columns[i+2])
 
-    f, ax = plt.subplots(figsize=(20,7))
+    f, ax = plt.subplots(figsize=(20,6))
     plt.bar(keys,lst, edgecolor= '#008B8B', color='#20B2AA', linewidth='4')
     plt.rcParams['font.sans-serif'] = "Courier New"
     plt.rcParams['font.family'] = "monospace"
-    ax.tick_params(axis='x', rotation=70, length=6, width=4, labelsize=15)
+    ax.tick_params(axis='x', rotation=50, length=6, width=4, labelsize=10)
     a = [row.Name[0].upper(), row.ME_CLASSIFIED[0]]
     plt.title(' >>>  '.join(map(str,a)), fontsize=40, color='#008080')
+    plt.subplots_adjust(bottom=0.2)
     grafico_resultado=plt.show()
+
     return grafico_resultado
 
 

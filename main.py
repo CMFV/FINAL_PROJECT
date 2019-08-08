@@ -11,8 +11,19 @@ import pickle
 import os
 import train
 import textdistance
+import argparse
+
+def parse():
+    parser = argparse.ArgumentParser()  # analizador de argumentos
+
+    grupo.add_argument('-m', '--model', help='Muestra un resumen del modelo generado.')  # action guarda el argumento
+    grupo.add_argument('-f', '--food', help='Muestra una lista de los alimentos que más se parecen a la busqueda introducida y su proximidad')
+    grupo.add_argument('-d', '--dish', help='Muestra la clasificación del argumento y sus propiedades')
+
+    return parser.parse_args()
 
 def main():
+    pars=parse()
     dir_path = os.path.dirname(os.path.realpath(__file__))
     csv_name=dir_path+'/me_diet_data.csv'
     df=csv_name
@@ -21,13 +32,16 @@ def main():
     df_me_data=train.labeling(df_me_data)
     X_train, X_test, y_train, y_test=train.defining_data_supervised(df_me_data)
     error, score=train.training_save_model(X_train, X_test, y_train, y_test)
+    grafico_modelo=train.plotter_model(score, error)
     directorio=dir_path+'/me_diet_EMPTY.csv'
     result=train.reading_model (directorio, df_me_data0)
     column=result['Name']
-    inputo='tuna'
+    inputo=pars.food
     rdo=train.filtro(inputo, column)
     lista = rdo
     mejor=train.consulta(inputo, lista)
+    print(mejor)
+    selection=pars.dish
     resultado = mejor
     res = [alimento for alimento, score in resultado][0]
     print(res)
