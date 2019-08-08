@@ -9,6 +9,9 @@ import matplotlib.pyplot as plt
 from sklearn import metrics
 import pickle
 import textdistance
+import itertools
+import cv2
+from sklearn.metrics import confusion_matrix
 
 def import_data(df):
     df_me_data0=pd.read_csv(df)
@@ -48,27 +51,46 @@ def training_save_model(X_train, X_test, y_train, y_test):
     randomforest = RandomForestClassifier(n_estimators = 1000, criterion = 'entropy', random_state = 42)
     randomforest.fit(X_train, y_train)
     y_pred=randomforest.predict(X_test)
+    y_prueba=[np.argmax(y)-1 for y in y_pred]
     score=randomforest.score(X_test, y_test)
     fpr, tpr, thresholds = metrics.roc_curve(y_test, y_pred, pos_label=1)
     error=metrics.auc(fpr, tpr)
     pickle_out = open('FOOD_PREDICTED.sav','wb')
     pickle.dump(randomforest, pickle_out)
     pickle_out.close()
-    return error, score, fpr, tpr
+    return error, score, fpr, tpr, y_prueba
 
-def plotter_model(score, error, fpr, tpr):
-    plt.figure()
-    lw = 2
-    plt.plot(fpr, tpr, color='darkorange',lw=lw, label='ROC curve (area = %0.2f)' % error)
-    plt.plot([0, 1], [0, 1], color='navy', lw=lw, linestyle='--')
-    plt.xlim([0.0, 1.0])
-    plt.ylim([0.0, 1.05])
-    plt.xlabel('False Positive Rate')
-    plt.ylabel('True Positive Rate')
-    plt.title('Random Forest accuracy {}'.format(score))
-    plt.legend(loc="lower right")
-    grafico_modelo=plt.show()
-    return grafico_modelo
+def plot_confusion_matrix(): #cm, keys, normalize=True, title='CONFUSION MATRIX', cmap=plt.cm.Blues):
+    """
+    This function prints and plots the confusion matrix.
+    Normalization can be applied by setting `normalize=True`.
+    """
+    if normalize:
+        cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
+        print("Normalized confusion matrix")
+    else:
+        print('Confusion matrix, without normalization')
+
+    plt.imshow(cm, interpolation='nearest', cmap=cmap)
+    plt.title(title, fontsize=25)
+    plt.colorbar()
+    tick_marks = np.arange(len(keys))
+    plt.xticks(tick_marks, keys, fontsize=15)
+    plt.yticks(tick_marks, keys, fontsize=15)
+
+    fmt = '.2f' if normalize else 'd'
+    thresh = cm.max() / 2.
+    for i, j in itertools.product(range(cm.shape[0]), range(cm.shape[1])):
+        plt.text(j, i, format(cm[i, j], fmt),
+                 horizontalalignment="center",
+                 color="white" if cm[i, j] > thresh else "black")
+
+    plt.tight_layout(pad=0.6,w_pad=0.6,h_pad=1)
+    plt.ylabel('True label', fontsize=15)
+    plt.xlabel('Predicted label', fontsize=15)
+    #grafico_modelo=plt.show()
+    img = cv2.imread("/confusion_matrix.png")
+    return img
 
 def reading_model (directorio, df_me_data0):
     modelo=pickle.load(open ('FOOD_PREDICTED.sav','rb'))
@@ -120,7 +142,7 @@ def plotter_selected (dish_selection, result, column):
     plt.rcParams['font.family'] = "monospace"
     ax.tick_params(axis='x', rotation=50, length=6, width=4, labelsize=10)
     a = [row.Name[0].upper(), row.ME_CLASSIFIED[0]]
-    plt.title(' >>>  '.join(map(str,a)), fontsize=40, color='#008080')
+    plt.title(' >>>  '.join(map(str,a)), fontsize=30, color='#008080')
     plt.subplots_adjust(bottom=0.2)
     grafico_resultado=plt.show()
 
