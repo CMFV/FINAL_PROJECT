@@ -71,7 +71,7 @@ def plot_confusion_matrix(): #cm, keys, normalize=True, title='CONFUSION MATRIX'
     else:
         print('Confusion matrix, without normalization')
 
-    plt.imshow(cm, interpolation='nearest', cmap=cmap)
+    plt.show(cm, interpolation='nearest', cmap=cmap)
     plt.title(title, fontsize=25)
     plt.colorbar()
     tick_marks = np.arange(len(keys))
@@ -88,9 +88,9 @@ def plot_confusion_matrix(): #cm, keys, normalize=True, title='CONFUSION MATRIX'
     plt.tight_layout(pad=0.6,w_pad=0.6,h_pad=1)
     plt.ylabel('True label', fontsize=15)
     plt.xlabel('Predicted label', fontsize=15)
-    #grafico_modelo=plt.show()
-    img = cv2.imread("/confusion_matrix.png")
-    return img
+    grafico_modelo=plt.show()
+    #img = cv2.imread("/confusion_matrix.png")
+    return grafico_modelo
 
 def reading_model (directorio, df_me_data0):
     modelo=pickle.load(open ('FOOD_PREDICTED.sav','rb'))
