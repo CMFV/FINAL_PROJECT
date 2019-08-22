@@ -20,7 +20,6 @@ import cv2
 def parse():
     parser = argparse.ArgumentParser()  # analizador de argumentos
 
-    parser.add_argument('-m', '--model', help='Muestra un resumen del modelo generado.')  # action guarda el argumento
     parser.add_argument('-f', '--food', help='Muestra una lista de los alimentos que más se parecen a la busqueda introducida y su proximidad', type=str)
     parser.add_argument('-d', '--dish', help='Muestra la clasificación del argumento y sus propiedades', type=str)
 
@@ -28,24 +27,8 @@ def parse():
 
 def main():
     pars=parse()
-    if pars.model:
-        a=pars.model
-        dir_path = os.path.dirname(os.path.realpath(__file__))
-        csv_name=dir_path+'/me_diet_data.csv'
-        df=csv_name
-        df_me_data0=train.import_data(df)
-        df_me_data=train.cleaning_final(df_me_data0)
-        df_me_data=train.labeling(df_me_data)
-        X_train, X_test, y_train, y_test=train.defining_data_supervised(df_me_data)
-        error, score, fpr, tpr, y_prueba=train.training_save_model(X_train, X_test, y_train, y_test)
-        #cm = confusion_matrix(y_prueba,y_test)
-        #keys = [-1,0,1]
-        #plt.figure(figsize=(10,10), linewidth='4')
-        #plt.rcParams['font.sans-serif'] = "Courier New"
-        #plt.rcParams['font.family'] = "monospace"
-        img=train.plot_confusion_matrix()
 
-    elif pars.food:
+    if pars.food:
         dir_path = os.path.dirname(os.path.realpath(__file__))
         csv_name=dir_path+'/me_diet_data.csv'
         df=csv_name

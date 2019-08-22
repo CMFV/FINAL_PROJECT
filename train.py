@@ -60,7 +60,7 @@ def training_save_model(X_train, X_test, y_train, y_test):
     pickle_out.close()
     return error, score, fpr, tpr, y_prueba
 
-def plot_confusion_matrix(): #cm, keys, normalize=True, title='CONFUSION MATRIX', cmap=plt.cm.Blues):
+def plot_confusion_matrix (cm, keys, normalize=False, title='CONFUSION MATRIX', cmap=plt.cm.Blues):
     """
     This function prints and plots the confusion matrix.
     Normalization can be applied by setting `normalize=True`.
