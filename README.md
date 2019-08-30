@@ -6,7 +6,7 @@ For the development of the program we have taken into account the diet prepared 
 
 The basis of this diet is represented in the following pyramid:
 
-![Wahls Protocol Pyramid](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![Wahls Protocol Pyramid](https://github.com/CMFV/FINAL_PROJECT/blob/master/Wahls%20Pyramid.png)
 
 
 
